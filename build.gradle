@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'eu.mikroskeem'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        name = 'destroystokyo-repo'
+        url = 'https://repo.destroystokyo.com/repository/maven-public/'
+    }
+
+    maven {
+        name = 'mikroskeem-repo'
+        url = 'https://repo.wut.ee/repository/mikroskeem-repo'
+    }
+}
+
+// Plugin/mod dependencies
+dependencies {
+    compileOnly group: 'com.destroystokyo.paper', name: 'paper-api', version: '1.12-R0.1-SNAPSHOT'
+    compileOnly group: 'eu.mikroskeem', name: 'shuriken.reflect', version: '0.0.1-SNAPSHOT'
+    compileOnly group: 'eu.mikroskeem', name: 'orion.api', version: '0.0.1'
+}
+
+// Wrapper task
+task wrapper(type: Wrapper) {
+    gradleVersion = gradle_version
+    distributionUrl = "https://services.gradle.org/distributions/gradle-$gradle_version-all.zip"
+}
