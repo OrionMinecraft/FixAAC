@@ -1,6 +1,8 @@
-# FixAAC
+# FixAAC (obsolete)
 
-An Orion mod to fix [AAC](https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/) plugin startup
+~~An Orion mod to fix [AAC](https://www.spigotmc.org/resources/aac-advanced-anti-cheat-hack-kill-aura-blocker.6442/) plugin startup~~
+
+Fixed as of [this Spigot commit](https://hub.spigotmc.org/stash/projects/SPIGOT/repos/bukkit/commits/c29791a82d9350af40164b501f6ca26d00e2ccba) and respective Paper upstream merge (build 1287?)
 
 ## What?
 
